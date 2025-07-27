@@ -80,7 +80,7 @@ const Index = () => {
       {isRaining && rainDrops.map(drop => (
         <div
           key={drop.id}
-          className="absolute w-1 h-8 bg-gradient-to-b from-primary/70 to-primary/30 rounded-full animate-rain-fall pointer-events-none"
+          className="absolute w-3 h-16 bg-gradient-to-b from-primary/70 to-primary/30 rounded-full animate-rain-fall pointer-events-none"
           style={{
             left: `${drop.left}%`,
             animationDelay: `${drop.animationDelay}s`,
