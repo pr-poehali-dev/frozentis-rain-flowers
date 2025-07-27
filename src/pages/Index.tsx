@@ -70,11 +70,11 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-fairy-lavender via-background to-fairy-mint relative overflow-hidden">
-      {/* Магический фон */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(232,213,255,0.3),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,228,232,0.3),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(212,244,221,0.3),transparent_50%)]" />
+    <div className="min-h-screen bg-gradient-to-br from-amber-900 via-amber-800 to-yellow-900 relative overflow-hidden">
+      {/* Земляной фон */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(92,51,23,0.4),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(120,69,25,0.3),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(101,67,33,0.3),transparent_50%)]" />
       
       {/* Дождь */}
       {isRaining && rainDrops.map(drop => (
