@@ -70,11 +70,9 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-900 via-amber-800 to-yellow-900 relative overflow-hidden">
-      {/* Земляной фон */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(92,51,23,0.4),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(120,69,25,0.3),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(101,67,33,0.3),transparent_50%)]" />
+    <div className="min-h-screen relative overflow-hidden" style={{backgroundImage: 'url(https://cdn.poehali.dev/files/b35bb410-2594-49e6-9d7a-58be50979689.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+      {/* Тёмный оверлей для лучшей читаемости */}
+      <div className="absolute inset-0 bg-black/20" />
       
       {/* Дождь */}
       {isRaining && rainDrops.map(drop => (
